@@ -1,0 +1,21 @@
+td {
+	text-align:center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.start{
+	width: 450px;
+}
+
+.starttext1 {
+	width: 450px;
+	text-align: left;
+}
+
+.starttext2 {
+	width:450px;
+	text-align: right;
+}

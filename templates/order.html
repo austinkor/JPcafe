@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Order Confirmation</title>
+	</head>
+	<body>
+		<a href = "{{url_for('home')}}"><img src = "../static/JPCafeLogo2.png" width="200" height="140"></a>
+		<h1>Order Confirmation</h1>
+		{{name}}, you have ordered:
+		<ul>
+			{%for item in arr%}
+				<li>{{item[0]}},${{item[1]}},{{item[2]}}</li>
+			{%endfor%}	
+		</ul>
+		<br><br>Total ${{total}}<br>
+		{%if discount%}
+		Discount: 10%
+		{%else%}
+		Discount: 0%
+		{%endif%}
+		
+		<br><br>
+		Total Payable ${{pay}}
+		
+		<br><br>
+		Your order is confirmed.<br>
+		Please pay the above amount when collecting your food. <br><br>
+		Date:{{date}}
+	</body>
+</html>
